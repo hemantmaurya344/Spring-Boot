@@ -1,0 +1,41 @@
+							Spring Boot
+	
+- Spring Boot is a module of Spring From which we speed up the devlopment.
+
+- It provides an easier and faster way to set up, configgure, and run both simple and web-based applications.
+- Convention over configuration software design style.
+- it decrease the effort of the developer.
+- Opinionated Default- Automatically configure.
+
+- Spring Boot scan the class path and find dependency it will automatically configure the things.
+
+- Advantages: 
+	- It creates standalone Spring Applications that can be started using java -jar.
+	- Embeded Tomcat, jetty, etc directly(no need to deploy war files).
+	- Provide opinioted started dependecies to simplify your build configuration.
+	- Automatically configure Spring and 3rd party libraries whenever possible.
+	- Provide production-ready features such as metrics, health checks, and externalized configuration.
+	- Absolutely no code generation and no requirement for XML configuration.
+		
+- Spring Boot works on starter POM(Project Object Model). 
+- There are predefined configuration used for different types of project are called as starter jars, we need to add them it will then 
+   pull all the jars config related with them.
+		- spring-boot-starter-web (for web)
+		- spring-boot-started-data-jpa (for jpa)
+		- others
+- The jar contain `META_INF` folder which contain `spring.factories` where all the dependencies are specified related to project.
+- Spring Boot automatically enabled or disabled  based on some condition by scanning the classpath.
+
+- How to Start with spring Boot
+	- 1. Create a maven project and add starter dependencies.  (Not Recommend)
+	- 2. Use Spring Initializr.
+	- 3. Use IDE like STS(Spring Tool Suite).
+	- 4. Spring Boot command Line Interface. (Not Recommend)
+	
+- Spring Boot Starter JPA 
+	- Structure: 
+											   extends
+				Model		ModelRespository  -------->  JPARepository	
+				
+				
+				
